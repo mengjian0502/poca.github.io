@@ -138,9 +138,9 @@
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        <p>Left: Ground truth avatar captured by the Mugsy system (MultiFace, CVPR'2023-3DMV).</p>
-        <p>Middle: Noisy and jittering avatar rendered by the deep appearance model + SoTA post training quantization algorithm.</p>
-        <p>Right: Proposed POCA algorithm with clean avatar rendering.</p>
+        <p><b>Left<b>: Ground truth avatar captured by the Mugsy system (MultiFace, CVPR'2023-3DMV).</p>
+        <p><b>Middle<b>: Noisy and jittering avatar with the SoTA post training quantization algorithm.</p>
+        <p><b>Right</b>: Proposed POCA algorithm with clean avatar rendering.</p>
       </h2>
     </div>
   </div>
@@ -162,6 +162,26 @@
     </div>
   </div>
 </section>
+
+<section class="section">
+    <div class="container is-max-desktop">
+      <!-- Method. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Method</h2>
+
+          <div class="content has-text-justified">
+            <p>
+              <span class="poca">Overall PTQ process of POCA based on layer-wise calibration (Layer Calib).
+                POCA fully quantizes all the layers in the VAE decoder, where the proposed view-dependent + SWD filter is applied to the decoder with transpose convolution layers. 
+                In other words, the quantizers are quantized based on the most relevant visual information, which further minimizes the impact of the long-tailed distribution of human face.  
+            </p>
+          </div>
+          <div class="content has-text-centered">
+            <img src="./static/images/POCA.png">
+          </div>
+        </div>
+      </div>
 <!-- End paper abstract -->
 
 <!-- Paper poster -->
