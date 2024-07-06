@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>POCA: Post-training Quantization with Temporal Alignment for Codec Avatars</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -56,16 +56,22 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href=https://mengjian0502.github.io/ target="_blank">Jian Meng</a>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href=https://scholar.google.com/citations?user=0z9MCsYAAAAJ&hl=en target="_blank">Yuecheng Li</a>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href=https://www.linkedin.com/in/leochli/ target="_blank">Leo Chenghui Li</a>
+                  <span class="author-block">
+                    <a href=https://scholar.google.com/citations?user=dbOGRFoAAAAJ&hl=en target="_blank">Syed Shakib Sarwar</a>
+                  <span class="author-block">
+                    <a href=https://scholar.google.com/citations?user=dmTy9EIAAAAJ&hl=en&oi=ao target="_blank">Dilin Wang</a>
+                    <span class="author-block">
+                      <a href=https://seo.ece.cornell.edu/ target="_blank">Jae-sun Seo</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
+                    <span class="author-block">Meta Reality Lab, Cornell University<br>ECCV 2024</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
 
@@ -148,7 +154,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Real-time decoding generates high-quality assets for rendering photorealistic Codec Avatars for immersive social telepresence with AR/VR. However, high-quality avatar decoding incurs expensive computation and memory consumption, which necessitates the design of a decoder compression algorithm (e.g., quantization). Although quantization has been widely studied, the quantization of avatar decoders is an urgent yet under-explored need. Furthermore, the requirement of fast "User-Avatar" deployment prioritizes the post-training quantization (PTQ) over the time-consuming quantization-aware training (QAT). As the first work in this area, we reveal the sensitivity of the avatar decoding quality under low precision. In particular, the state-of-the-art (SoTA) QAT and PTQ algorithms introduce massive amounts of temporal noise to the rendered avatars, even with the well-established 8-bit precision. To resolve these issues, a novel PTQ algorithm is proposed for quantizing the avatar decoder with low-precision weights and activation (8-bit and 6-bit), without introducing temporal noise to the rendered avatar. Furthermore, the proposed method only needs 10% of the activations of each layer to calibrate quantization parameters without any distribution manipulations or extensive boundary search. The proposed method is evaluated on various face avatars with different facial characteristics. The proposed method compresses the decoder model by 5.3x while recovering the quality on par with the full precision baseline. In addition to the avatar rendering tasks, POCA is also applicable to image resolution enhancement tasks, achieving new SoTA image quality. 
           </p>
         </div>
       </div>
