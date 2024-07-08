@@ -60,7 +60,7 @@
                 <span class="author-block">
                   <a href=https://scholar.google.com/citations?user=0z9MCsYAAAAJ&hl=en target="_blank">Yuecheng Li</a>,</span>
                   <span class="author-block">
-                    <a href=https://www.linkedin.com/in/leochli/ target="_blank">Leo Chenghui Li</a>
+                    <a href=https://www.linkedin.com/in/leochli/ target="_blank">Leo Chenghui Li</a>,</span>
                   <span class="author-block">
                     <a href=https://scholar.google.com/citations?user=dbOGRFoAAAAJ&hl=en target="_blank">Syed Shakib Sarwar</a>,</span>
                   <span class="author-block">
@@ -132,6 +132,7 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
+      <h2 class="title is-3">Clean Avatar with the Quantized Decoder Model</h2>
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
         <source src="static/videos/poca_w8a8_compare2all.mp4"
@@ -139,8 +140,8 @@
       </video>
       <h2 class="subtitle", style="text-align: left;">
         <p><b>Left</b>: Ground truth avatar captured by the Mugsy system (MultiFace, CVPR'2023-3DMV).</p>
-        <p><b>Middle</b>: Noisy and jittering avatar with the SoTA post training quantization algorithm.</p>
-        <p><b>Right</b>: Proposed POCA algorithm with clean avatar rendering.</p>
+        <p><b>Middle</b>: Noisy and jittering avatar with the SoTA post training quantization algorithm (INT8).</p>
+        <p><b>Right</b>: Proposed POCA algorithm with clean avatar rendering (INT8).</p>
       </h2>
     </div>
   </div>
@@ -173,7 +174,7 @@
           <div class="content has-text-justified">
             <p>
               <span class="poca">Overall PTQ process of POCA based on layer-wise calibration (Layer Calib).
-                POCA fully quantizes all the layers in the VAE decoder, where the proposed view-dependent + SWD filter is applied to the decoder with transpose convolution layers. 
+                POCA fully quantizes all the layers in the VAE decoder (Deep Appearance Model (ACM Trans. Graph, 2018)), where the proposed view-dependent + SWD filter is applied to the decoder with transpose convolution layers. 
                 In other words, the quantizers are quantized based on the most relevant visual information, which further minimizes the impact of the long-tailed distribution of human face.  
             </p>
           </div>
@@ -204,10 +205,10 @@
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>@inproceedings{poca2024meng,
-        author = {Jian Meng and Yuecheng Li and Leo Chenghui Li and Syed Shakib Sarwar and Dilin Wang and Jae-sun Seo},
-        title = {POCA: Post-training Quantization with Temporal Alignment for Codec Avatars}, 
-        booktitle = {ECCV},
-        year = {2024},
+      author = {Jian Meng and Yuecheng Li and Leo Chenghui Li and Syed Shakib Sarwar and Dilin Wang and Jae-sun Seo},
+      title = {POCA: Post-training Quantization with Temporal Alignment for Codec Avatars}, 
+      booktitle = {ECCV},
+      year = {2024},
       }</code></pre>
     </div>
 </section>
