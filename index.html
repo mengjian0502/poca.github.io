@@ -183,7 +183,47 @@
           </div>
         </div>
       </div>
-<!-- End paper abstract -->
+      
+<section class="section">
+    <div class="container is-max-desktop">
+      <!-- Method. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Method</h2>
+
+          <div class="content has-text-justified">
+            <p>
+              <span class="poca">Overall PTQ process of POCA based on layer-wise calibration (Layer Calib).
+                POCA fully quantizes all the layers in the VAE decoder (Deep Appearance Model (ACM Trans. Graph, 2018)), where the proposed view-dependent + SWD filter is applied to the decoder with transpose convolution layers. 
+                In other words, the quantizers are quantized based on the most relevant visual information, which further minimizes the impact of the long-tailed distribution of human face.  
+            </p>
+          </div>
+          <div class="content has-text-centered">
+            <img src="./static/images/POCA.png">
+          </div>
+        </div>
+      </div>
+
+<section class="section">
+    <div class="container is-max-desktop">
+      <!-- Method. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Dynamically Long-tailed Human Face</h2>
+          <div class="content has-text-justified">
+            <p>
+              <span class="poca">In practice, the texture and geometry of human face exhibits different statistical characteristics across different regions and expressions. 
+                As shown in the figure below, different facial expressions changes both regional and global distribution, especially the tailedness. 
+            </p>
+          </div>
+          <div class="content has-text-centered">
+            <img src="./static/images/row_channel_plane.png">
+          </div>
+          <h2 class="subtitle", style="text-align: left;">
+            <p><b>Slice the activation of the decoder model into different row-channel planes</b>: Different expressions shows different tailediness (standard deviation) in different regions.</p>
+          </h2>
+        </div>
+      </div>
 
 <!-- Paper poster -->
 <!-- <section class="hero is-small is-light">
